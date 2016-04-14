@@ -40,7 +40,9 @@ public class WenAPCS {
         } else if (problem == 5) {
             problem5;
         } else if (problem == 6) {
-            problem6;
+            System.out.println("Type the number to test: ");
+            int x = Integer.parseInt(reader.nextLine());
+            System.out.println(problem6.problem6(x));
         } else {
             problem7;
         }
