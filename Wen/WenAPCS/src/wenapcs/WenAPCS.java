@@ -34,7 +34,8 @@ public class WenAPCS {
             double b = Double.parseDouble(reader.nextLine());
             System.out.println("Put c: ");
             double c = Double.parseDouble(reader.nextLine());
-            System.out.println(problem3(a, b, c));
+            System.out.println(problem3.problem3x1(a, b, c));
+            System.out.println(problem3.problem3x2(a, b, c));
         } else if (problem == 4) {
             problem4;
         } else if (problem == 5) {

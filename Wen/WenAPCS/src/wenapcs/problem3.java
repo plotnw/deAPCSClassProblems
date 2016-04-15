@@ -12,15 +12,35 @@ import java.util.Scanner;
 public class problem3 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.println("idek");
-        char x = (reader.nextLine().charAt(0));
-        System.out.println("pleasehalp:");
-        String y = reader.nextLine();
-        System.out.println(problem3 (x, y));
+        System.out.println("Type a");
+        double a = Double.parseDouble(reader.nextLine());
+        System.out.println("Type b:");
+        double b = Double.parseDouble(reader.nextLine());
+        System.out.println("Type c:");
+        double c = Double.parseDouble(reader.nextLine());
+        System.out.println(problem3x1 (a, b, c));
+        System.out.println(problem3x2 (a, b, c));
         
     }
-    public static int problem3 (char x, String y) {
-       return 5;
+    public static String problem3x1 (double a, double b, double c) {
+       double discriminant = Math.pow(b, 2) - 4 * a * c;
+       double denominator = 2 * a;
+       if (discriminant < 0 == false) {
+           return (Double.toString((-b + Math.sqrt(discriminant)) / denominator));
+       } else {
+           return "Imaginary Root";
+       }
+          
+}
+    public static String problem3x2 (double a, double b, double c) {
+       double discriminant = Math.pow(b, 2) - 4 * a * c;
+       double denominator = 2 * a;
+       if (discriminant < 0 == false) {
+           return (Double.toString((-b - Math.sqrt(discriminant)) / denominator));
+       } else {
+           return "Imaginary Root";
+       }
+          
 }
 }
 
