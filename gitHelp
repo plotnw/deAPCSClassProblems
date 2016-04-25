@@ -1,0 +1,13 @@
+To commit, type "git commit -am "<commit message>"
+The -am will commit added files, as well as modifications
+
+To add a new file to the repo, type "git add /path/to/file"
+
+To remove a file from the repo, type "git rm /path/to/file"
+
+To check status of the repo, type "git status"
+This lets you know of any changes in your stuff that you might need to commit
+
+After commiting, to push to the repo, type "git push"
+
+To get other people's changes, type "git pull"
