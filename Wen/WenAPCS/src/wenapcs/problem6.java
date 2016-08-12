@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class problem6 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
-        System.out.println("idek");
+        System.out.println("year");
         int x = Integer.parseInt(reader.nextLine());
         System.out.println(problem6(x));
         

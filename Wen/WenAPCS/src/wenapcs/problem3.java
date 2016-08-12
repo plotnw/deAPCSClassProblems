@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package wenapcs;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 /**
  *
@@ -19,28 +22,29 @@ public class problem3 {
         System.out.println("Type c:");
         double c = Double.parseDouble(reader.nextLine());
         System.out.println(problem3x1 (a, b, c));
-        System.out.println(problem3x2 (a, b, c));
         
     }
-    public static String problem3x1 (double a, double b, double c) {
-       double discriminant = Math.pow(b, 2) - 4 * a * c;
-       double denominator = 2 * a;
-       if (discriminant < 0 == false) {
-           return (Double.toString((-b + Math.sqrt(discriminant)) / denominator));
-       } else {
-           return "Imaginary Root";
+
+    /**
+     *
+     * @param a
+     * @param b
+     * @param c
+     * @return
+     */
+    public static List<Double> problem3x1 (double a, double b, double c) {
+       List<Double> results = new ArrayList<>(Arrays.asList());
+       double disc = Math.pow(b, 2) - 4 * a * c;
+       if (a != 0 &&  disc >= 0) {
+           double solution1 = ((0-b) + disc)/(2*a);
+           double solution2 = ((0-b) - disc)/(2*a);
+           results.add(solution1);
+           results.add(solution2);
+       } else if (a == 0) {
+           double solution1 = 0 - (c / b);
+           results.add(solution1);
        }
-          
-}
-    public static String problem3x2 (double a, double b, double c) {
-       double discriminant = Math.pow(b, 2) - 4 * a * c;
-       double denominator = 2 * a;
-       if (discriminant < 0 == false) {
-           return (Double.toString((-b - Math.sqrt(discriminant)) / denominator));
-       } else {
-           return "Imaginary Root";
-       }
-          
+       return results;
 }
 }
 
