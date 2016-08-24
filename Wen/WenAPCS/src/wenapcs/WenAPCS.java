@@ -1,23 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wenapcs;
 import java.util.Scanner;
 import static wenapcs.problem4.problem4;
 import static wenapcs.problem5.problem5;
 import static wenapcs.problem6.problem6;
 import static wenapcs.problem7.isMultiple;
-/**
- *
- * @author Plotnw
- */
 public class WenAPCS {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         System.out.println("put question");
