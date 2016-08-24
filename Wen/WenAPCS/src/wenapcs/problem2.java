@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wenapcs;
 import java.util.Scanner;
-/**
- *
- * @author Plotnw
- */
 public class problem2 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
@@ -17,7 +8,6 @@ public class problem2 {
         System.out.println("word:");
         String y = reader.nextLine();
         System.out.println(problem2 (x, y));
-        
     }
     public static int problem2 (char x, String y) {
         int sum = 0;
@@ -28,4 +18,3 @@ public class problem2 {
     } return sum;
     }
 }
-

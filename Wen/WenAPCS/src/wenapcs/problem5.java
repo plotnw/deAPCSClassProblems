@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package wenapcs;
 import java.util.Scanner;
-/**
- *
- * @author Plotnw
- */
 
 public class problem5 {
     public static void main(String[] args) {
@@ -27,11 +18,10 @@ public class problem5 {
             return false;
         } else 
             for (int i = 3; i < bound; i=1+2) {
-             if (n % i == 0) { 
-                return false;
-            }
-         
-    } return true;
+                if (n % i == 0) { 
+                    return false;
+                }
+            }    
+        return true;
+    }   
 }
-}
-
