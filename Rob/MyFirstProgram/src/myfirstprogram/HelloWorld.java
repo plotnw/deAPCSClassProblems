@@ -6,10 +6,14 @@ Introduction to input and output
 */
 
 package myfirstprogram;
-public class HelloWorld 
+import java.util.Scanner;
+public class HelloWorld                     // public (access specifier) class HelloWorld
 {
-   public static void main(String [] args)
-   {
-       System.out.print("Hello, World!");
-   } 
+   public static void main(String [] args)  // public (access) static void (return-type) main (name) (String [] args) (parameter list) <-- signature of the method
+   { 
+       System.out.println("Hello, World!"); // System (class).out.print (method) ("Hello, World!"); <-- String literal
+       System.out.println();
+       System.out.println("How are you?");
+       
+    }
 }
