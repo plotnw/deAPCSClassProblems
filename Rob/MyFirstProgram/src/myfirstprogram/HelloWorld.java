@@ -1,9 +1,9 @@
+package myfirstprogram;
 /**
  *
  * @author aburur
  * @version Sept. 2016
  */
-package myfirstprogram;
 import java.util.Scanner;
 public class HelloWorld 
 {
