@@ -38,13 +38,14 @@ public class ACSL1AGRAM
                     {
                         cardToPlay = lowestCard(cards);
                     }
-                    System.out.println(cardToPlay.substring(0,2));
+                    //System.out.println(cardToPlay.substring(0,2));
                 }
                 else
                 {   
                     cardToPlay = lowestCard(cards);
-                    System.out.println(cardToPlay.substring(0,2));
+                    //System.out.println(cardToPlay.substring(0,2));
                 }
+                System.out.println(cardToPlay.substring(0,2));
                 System.out.println("________________________________________________________________________________________________________________________________________________");
             }
         }
