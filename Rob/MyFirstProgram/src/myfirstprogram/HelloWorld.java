@@ -11,10 +11,12 @@ public class HelloWorld
     {
         Scanner reader = new Scanner(System.in);
         
-        System.out.print("Please enter your name: ");
-        String name = reader.nextLine();
-        System.out.println("Hello there, " + name + "!");
-        String k = "lol";
-        k.substring(10).equals(k);
+//        System.out.print("Please enter your name: ");
+//        String name = reader.nextLine();
+//        System.out.println("Hello there, " + name + "!");
+//        String k = "lol";
+//        k.substring(10).equals(k);
+        
+        System.out.println((int)(Math.random() * 8));
     }
 }
